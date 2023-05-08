@@ -73,7 +73,7 @@ public class LoanController {
 				}
 		//UserModel
 		@PostMapping("/post4")
-		public UserModel postD3(UserModel amodel7)
+		public UserModel postD3(@RequestBody UserModel amodel7)
 		{
 			return lser.post4(amodel7);
 		}
@@ -83,7 +83,7 @@ public class LoanController {
 			return lser.get4();
 		}
 		@PutMapping("/put4")
-		public UserModel putD3(UserModel amodel8)
+		public UserModel putD3(@RequestBody UserModel amodel8)
 		{
 			return lser.put4(amodel8);
 		}
